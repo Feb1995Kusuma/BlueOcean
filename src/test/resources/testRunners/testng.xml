@@ -5,12 +5,16 @@
   <listeners> 
   
   <listener class-name="com.qa.opencart.listeners.ListenersTestNG"></listener> 
-  <listener class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
   <listener class-name="com.qa.opencart.listeners.ExtentReportListener"></listener> 
   
   </listeners>
     
-  
+  <test name="Opencart BaseTest">
+       <classes>  
+     <class name="com.qa.opencart.test.BaseTest">
+        </class> 
+       </classes>    
+     </test>
   
   <test name="Opencart LoginPage Test">
        <classes>  
