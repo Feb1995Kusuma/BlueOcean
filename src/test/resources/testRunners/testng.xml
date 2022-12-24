@@ -4,10 +4,12 @@
   
   <listeners> 
   
-   <listener class-name="com.qa.opencart.listeners.ExtentReportListener"></listener>
-   <listener class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
-  </listeners>
+  <listener class-name="com.qa.opencart.listeners.ListenersTestNG"></listener> 
   
+  <listener class-name="com.qa.opencart.listeners.ExtentReportListener"></listener> 
+  
+  </listeners>
+    
   
   
   <test name="Opencart LoginPage Test">
