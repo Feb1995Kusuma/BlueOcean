@@ -15,7 +15,7 @@ public class RegistrationPageTest extends BaseTest
 {
   public WebDriver driver;
 
-   
+
      
 	@BeforeClass
 	public void setupRegistration() {
