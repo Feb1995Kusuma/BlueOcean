@@ -2,96 +2,96 @@
 <testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-24T10:59:57 IST" name="Open cart test Suite" finished-at="2022-12-24T11:02:21 IST" duration-ms="144430">
+  <suite started-at="2022-12-24T11:21:09 IST" name="Open cart test Suite" finished-at="2022-12-24T11:24:13 IST" duration-ms="183904">
     <groups>
     </groups>
-    <test started-at="2022-12-24T10:59:57 IST" name="Opencart LoginPage Test" finished-at="2022-12-24T11:00:26 IST" duration-ms="29305">
+    <test started-at="2022-12-24T11:21:09 IST" name="Opencart LoginPage Test" finished-at="2022-12-24T11:21:52 IST" duration-ms="42819">
       <class name="com.qa.opencart.test.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T10:59:57 IST" name="setup" finished-at="2022-12-24T11:00:21 IST" duration-ms="24310" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:10 IST" name="setup" finished-at="2022-12-24T11:21:47 IST" duration-ms="37392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginpagetitletest()[pri:1, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:21 IST" name="loginpagetitletest" finished-at="2022-12-24T11:00:21 IST" duration-ms="54" status="PASS">
+        <test-method signature="loginpagetitletest()[pri:1, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:47 IST" name="loginpagetitletest" finished-at="2022-12-24T11:21:47 IST" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpagetitletest -->
-        <test-method signature="loginpageurltest()[pri:2, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:21 IST" name="loginpageurltest" finished-at="2022-12-24T11:00:21 IST" duration-ms="17" status="PASS">
+        <test-method signature="loginpageurltest()[pri:2, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:48 IST" name="loginpageurltest" finished-at="2022-12-24T11:21:48 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpageurltest -->
-        <test-method signature="forgetpwdlinktest()[pri:3, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:21 IST" name="forgetpwdlinktest" finished-at="2022-12-24T11:00:22 IST" duration-ms="145" status="PASS">
+        <test-method signature="forgetpwdlinktest()[pri:3, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:48 IST" name="forgetpwdlinktest" finished-at="2022-12-24T11:21:48 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgetpwdlinktest -->
-        <test-method signature="registerlinktest()[pri:4, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:22 IST" name="registerlinktest" finished-at="2022-12-24T11:00:22 IST" duration-ms="75" status="PASS">
+        <test-method signature="registerlinktest()[pri:4, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:48 IST" name="registerlinktest" finished-at="2022-12-24T11:21:48 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerlinktest -->
-        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:22 IST" name="loginTest" finished-at="2022-12-24T11:00:24 IST" duration-ms="2668" status="PASS">
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:48 IST" name="loginTest" finished-at="2022-12-24T11:21:51 IST" duration-ms="2307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginpageTest@66fdec9]" started-at="2022-12-24T11:00:24 IST" name="tearDown" finished-at="2022-12-24T11:00:26 IST" duration-ms="1707" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginpageTest@410ae9a3]" started-at="2022-12-24T11:21:51 IST" name="tearDown" finished-at="2022-12-24T11:21:52 IST" duration-ms="1604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.test.LoginpageTest -->
     </test> <!-- Opencart LoginPage Test -->
-    <test started-at="2022-12-24T10:59:57 IST" name="Opencart ProductInfoPage Test" finished-at="2022-12-24T11:01:00 IST" duration-ms="63521">
+    <test started-at="2022-12-24T11:21:09 IST" name="Opencart ProductInfoPage Test" finished-at="2022-12-24T11:22:53 IST" duration-ms="103927">
       <class name="com.qa.opencart.test.ProductInfoPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T10:59:57 IST" name="setup" finished-at="2022-12-24T11:00:21 IST" duration-ms="24341" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:21:10 IST" name="setup" finished-at="2022-12-24T11:21:48 IST" duration-ms="38555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="productInfoSetup()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T11:00:21 IST" name="productInfoSetup" finished-at="2022-12-24T11:00:24 IST" duration-ms="2826" status="PASS">
+        <test-method is-config="true" signature="productInfoSetup()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:21:48 IST" name="productInfoSetup" finished-at="2022-12-24T11:21:50 IST" duration-ms="2351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productInfoSetup -->
-        <test-method signature="productHeaderTest()[pri:1, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T11:00:24 IST" name="productHeaderTest" finished-at="2022-12-24T11:00:40 IST" duration-ms="16032" status="PASS">
+        <test-method signature="productHeaderTest()[pri:1, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:21:50 IST" name="productHeaderTest" finished-at="2022-12-24T11:22:11 IST" duration-ms="20884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productImagesCountTest()[pri:2, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T11:00:40 IST" name="productImagesCountTest" finished-at="2022-12-24T11:00:48 IST" duration-ms="7919" status="PASS">
+        <test-method signature="productImagesCountTest()[pri:2, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:22:11 IST" name="productImagesCountTest" finished-at="2022-12-24T11:22:36 IST" duration-ms="24841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productInfoTest()[pri:3, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T11:00:48 IST" name="productInfoTest" finished-at="2022-12-24T11:00:59 IST" duration-ms="11076" status="PASS">
+        <test-method signature="productInfoTest()[pri:3, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:22:36 IST" name="productInfoTest" finished-at="2022-12-24T11:22:48 IST" duration-ms="11390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productInfoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@31000e60]" started-at="2022-12-24T11:00:59 IST" name="tearDown" finished-at="2022-12-24T11:01:00 IST" duration-ms="1274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.ProductInfoPageTest@5b6813df]" started-at="2022-12-24T11:22:48 IST" name="tearDown" finished-at="2022-12-24T11:22:53 IST" duration-ms="5741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.test.ProductInfoPageTest -->
     </test> <!-- Opencart ProductInfoPage Test -->
-    <test started-at="2022-12-24T10:59:57 IST" name="Opencart AccountsPage Test" finished-at="2022-12-24T11:01:31 IST" duration-ms="94336">
+    <test started-at="2022-12-24T11:21:09 IST" name="Opencart AccountsPage Test" finished-at="2022-12-24T11:23:28 IST" duration-ms="138034">
       <class name="com.qa.opencart.test.AccountsPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T10:59:57 IST" name="setup" finished-at="2022-12-24T11:00:21 IST" duration-ms="24332" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:10 IST" name="setup" finished-at="2022-12-24T11:21:47 IST" duration-ms="37671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="accPageSetup()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:21 IST" name="accPageSetup" finished-at="2022-12-24T11:00:24 IST" duration-ms="3222" status="PASS">
+        <test-method is-config="true" signature="accPageSetup()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:47 IST" name="accPageSetup" finished-at="2022-12-24T11:21:49 IST" duration-ms="2139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageSetup -->
-        <test-method signature="accPageTitleTest()[pri:1, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:24 IST" name="accPageTitleTest" finished-at="2022-12-24T11:00:24 IST" duration-ms="5" status="PASS">
+        <test-method signature="accPageTitleTest()[pri:1, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:49 IST" name="accPageTitleTest" finished-at="2022-12-24T11:21:49 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageTitleTest -->
-        <test-method signature="accPageHeaderTest()[pri:2, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:24 IST" name="accPageHeaderTest" finished-at="2022-12-24T11:00:26 IST" duration-ms="1349" status="PASS">
+        <test-method signature="accPageHeaderTest()[pri:2, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:49 IST" name="accPageHeaderTest" finished-at="2022-12-24T11:21:51 IST" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageHeaderTest -->
-        <test-method signature="isLogoutExistTest()[pri:3, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:26 IST" name="isLogoutExistTest" finished-at="2022-12-24T11:00:27 IST" duration-ms="934" status="PASS">
+        <test-method signature="isLogoutExistTest()[pri:3, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:51 IST" name="isLogoutExistTest" finished-at="2022-12-24T11:21:52 IST" duration-ms="1257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isLogoutExistTest -->
-        <test-method signature="accPageSectionsTest()[pri:4, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:28 IST" name="accPageSectionsTest" finished-at="2022-12-24T11:00:29 IST" duration-ms="794" status="PASS">
+        <test-method signature="accPageSectionsTest()[pri:4, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:52 IST" name="accPageSectionsTest" finished-at="2022-12-24T11:21:52 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageSectionsTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:29 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:00:35 IST" duration-ms="5785" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:21:52 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:22:00 IST" duration-ms="8209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:35 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:00:40 IST" duration-ms="5221" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:22:01 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:22:10 IST" duration-ms="9402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:40 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:00:45 IST" duration-ms="4495" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:5, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:22:10 IST" name="searchTest" data-provider="productData" finished-at="2022-12-24T11:22:15 IST" duration-ms="5231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:45 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:00:57 IST" duration-ms="12473" status="PASS">
+        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:22:15 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:22:35 IST" duration-ms="20074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,7 +140,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:00:57 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:01:07 IST" duration-ms="9611" status="PASS">
+        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:22:35 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:23:02 IST" duration-ms="26857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:01:07 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:01:15 IST" duration-ms="8255" status="PASS">
+        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:23:02 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:23:13 IST" duration-ms="10500" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:01:15 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:01:30 IST" duration-ms="15145" status="PASS">
+        <test-method signature="selectProductTest(java.lang.String,java.lang.String)[pri:6, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:23:13 IST" name="selectProductTest" data-provider="productSelectData" finished-at="2022-12-24T11:23:25 IST" duration-ms="12149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,23 +188,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@6492fab5]" started-at="2022-12-24T11:01:30 IST" name="tearDown" finished-at="2022-12-24T11:01:31 IST" duration-ms="990" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.AccountsPageTest@69c79f09]" started-at="2022-12-24T11:23:25 IST" name="tearDown" finished-at="2022-12-24T11:23:28 IST" duration-ms="2743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.test.AccountsPageTest -->
     </test> <!-- Opencart AccountsPage Test -->
-    <test started-at="2022-12-24T11:00:28 IST" name="Opencart RegistrationPage Test" finished-at="2022-12-24T11:02:21 IST" duration-ms="112766">
+    <test started-at="2022-12-24T11:21:54 IST" name="Opencart RegistrationPage Test" finished-at="2022-12-24T11:24:13 IST" duration-ms="139635">
       <class name="com.qa.opencart.test.RegistrationPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:00:28 IST" name="setup" finished-at="2022-12-24T11:00:39 IST" duration-ms="10841" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:21:54 IST" name="setup" finished-at="2022-12-24T11:22:15 IST" duration-ms="21245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupRegistration()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:00:39 IST" name="setupRegistration" finished-at="2022-12-24T11:00:41 IST" duration-ms="1232" status="PASS">
+        <test-method is-config="true" signature="setupRegistration()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:22:15 IST" name="setupRegistration" finished-at="2022-12-24T11:22:18 IST" duration-ms="3150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupRegistration -->
-        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:00:43 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:01:08 IST" duration-ms="25238" status="PASS">
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:22:19 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:22:56 IST" duration-ms="36754" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -235,7 +235,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistrationTest -->
-        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:01:08 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:01:36 IST" duration-ms="28268" status="PASS">
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:22:56 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:23:26 IST" duration-ms="29990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,7 +266,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistrationTest -->
-        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:01:36 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:01:59 IST" duration-ms="22679" status="PASS">
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:23:26 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:23:49 IST" duration-ms="23758" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,7 +297,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistrationTest -->
-        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:01:59 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:02:20 IST" duration-ms="21289" status="PASS">
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:23:49 IST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2022-12-24T11:24:12 IST" duration-ms="22726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -328,7 +328,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistrationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@2dd80673]" started-at="2022-12-24T11:02:20 IST" name="tearDown" finished-at="2022-12-24T11:02:21 IST" duration-ms="1110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.RegistrationPageTest@35fe2125]" started-at="2022-12-24T11:24:12 IST" name="tearDown" finished-at="2022-12-24T11:24:13 IST" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
