@@ -8,11 +8,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.qa.opencart.pages.Accountspage;
 import com.qa.opencart.util.Constant;
 
 public class AccountsPageTest extends BaseTest {
 	
 	private WebDriver driver;
+   
+	Accountspage accountspage;
 
 	
 	@BeforeClass
