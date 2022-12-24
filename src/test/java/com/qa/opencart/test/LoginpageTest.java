@@ -1,5 +1,6 @@
 package com.qa.opencart.test;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,6 +9,8 @@ import com.qa.opencart.util.Constant;
 public class LoginpageTest extends BaseTest
 {
 	
+	public WebDriver driver;
+
 	
 	@Test(priority =1)
 	public void loginpagetitletest() {
