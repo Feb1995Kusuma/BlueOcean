@@ -3,20 +3,14 @@ package com.qa.opencart.test;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.pages.ProductInfopage;
 import com.qa.opencart.util.Constant;
 
 public class ProductInfoPageTest extends BaseTest
 {
-	private WebDriver driver;
-
-	ProductInfopage productInfoPage;
-
 	@BeforeClass
 	public void productInfoSetup() {
 		accountspage = loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));

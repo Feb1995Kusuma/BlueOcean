@@ -1,19 +1,12 @@
 package com.qa.opencart.test;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.pages.LoginPage;
 import com.qa.opencart.util.Constant;
 
 public class LoginpageTest extends BaseTest
 {
-	
-	private WebDriver driver;
-
-	LoginPage loginpage;
-
 	
 	@Test(priority =1)
 	public void loginpagetitletest() {

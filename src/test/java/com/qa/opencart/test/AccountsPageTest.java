@@ -2,21 +2,14 @@ package com.qa.opencart.test;
 
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.pages.Accountspage;
 import com.qa.opencart.util.Constant;
 
 public class AccountsPageTest extends BaseTest {
-	
-	private WebDriver driver;
-   
-	Accountspage accountspage;
-
 	
 	@BeforeClass
 	public void accPageSetup() {

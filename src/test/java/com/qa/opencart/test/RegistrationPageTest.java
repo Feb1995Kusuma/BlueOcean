@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.pages.RegistrationPage;
 import com.qa.opencart.util.Constant;
 import com.qa.opencart.util.ExcelUtil;
 
@@ -16,12 +15,10 @@ public class RegistrationPageTest extends BaseTest
 {
   public WebDriver driver;
 
-  RegistrationPage registrationPage;
 
      
 	@BeforeClass
 	public void setupRegistration() {
-		WebDriver driver;
 		registrationPage=loginpage.goToRegisterationpage();
 	}
 	
