@@ -11,7 +11,7 @@ public class Constant {
 	
 	
 	public static final String Login_PAGE_URL_FRACTION = "route=account/login";
-	public static final int DEFAULT_TIME_OUT = 5;
+	public static final int DEFAULT_TIME_OUT = 7;
 	public static final int IMAC_IMAGE_COUNT =3;
 	public static final int MACBOOKPRO_IMAGE_COUNT =4;
     public static final int MACBOOKAIR_IMAGE_COUNT =4;
