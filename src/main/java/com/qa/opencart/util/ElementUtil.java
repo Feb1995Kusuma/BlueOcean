@@ -23,12 +23,14 @@ import com.qa.opencart.Factory.DriverFactory;
 public class ElementUtil {
 	
 	private static final String urlFraction = null;
+	private static final Duration timeOut = null;
 	private WebDriver driver;
 	private Duration i;
 	private String title;
 	private JavaScript jsUtil; 
 
-	public ElementUtil(WebDriver driver) {
+	public ElementUtil(WebDriver driver)
+	{
 		this.driver = driver;
 		jsUtil = new JavaScript(driver);
 	}
@@ -289,8 +291,8 @@ public class ElementUtil {
 		return null;
 	}
 	
-	public String waitForUrlContains(String urlFraction, Duration defaultTimeOut) {
-		WebDriverWait wait = new WebDriverWait(driver, defaultTimeOut);
+	public String waitForUrlContains(String urlFraction, Duration timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver,timeOut);
 		if(wait.until(ExpectedConditions.urlContains(urlFraction))) {
 			return driver.getCurrentUrl();
 		}
@@ -346,10 +348,10 @@ public class ElementUtil {
 	 * @param intervalTime
 	 * @return
 	 */
-	//public WebElement waitForElementPresence(By locator, int timeOut, int intervalTime) {
-	//	WebDriverWait wait = new WebDriverWait(driver, timeOut, intervalTime);
-	//	return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-	//}
+	public WebElement waitForElementPresence1(By locator, Duration timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
 	
 	public WebElement waitForElementWithFluentWait(By locator, int timeOut, long pollingTime) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
@@ -399,12 +401,7 @@ public class ElementUtil {
 
 	
 
-	public String waitForUrlContains1(String loginPageUrlFraction, Duration defaultTimeOut) {
-		WebDriverWait wait = new WebDriverWait(driver, defaultTimeOut);
-		if(wait.until(ExpectedConditions.urlContains(urlFraction))) {
-			return driver.getCurrentUrl();
-		}
-		return null;	}
+	
 
 	public String waitForTitleContains1(String titleValue, Duration timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -441,5 +438,26 @@ public class ElementUtil {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public String waitForUrlContains1(String UrlFraction, int defaultTimeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		if(wait.until(ExpectedConditions.urlContains(UrlFraction))) {
+			return driver.getCurrentUrl();
+		}
+		return null;
+	}
+
+	public WebElement waitForElementPresence2(By locator, int timeOut) {
+		//WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		//WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		WebDriverWait some_element  = new WebDriverWait(driver, Duration.ofSeconds(100));
+		return some_element .until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
 	
+
+	
+	
+
+
 }
+

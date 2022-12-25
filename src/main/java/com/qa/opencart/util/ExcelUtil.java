@@ -11,11 +11,12 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtil {
 	
-	private static final String TEST_DATA_SHEET_PATH =".\\src\\test\\resources\\testdata\\OCTestData.xlt";
+	private static final String TEST_DATA_SHEET_PATH ="./src/test/resources/testdata/christmasdata.xlt";
 	private static Workbook book;
 	private static Sheet sheet;
 	
-	public static Object[][] getTestData(String sheetName) {
+	public static Object[][] getTestData(String sheetName) 
+	{
 		
 		Object data[][]= null;
 		

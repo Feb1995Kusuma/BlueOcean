@@ -1,48 +1,39 @@
 package com.qa.opencart.test;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.util.Constant;
+import com.qa.opencart.util.Errors;
 
-public class LoginpageTest extends BaseTest
-{
+public class LoginPageTest extends BaseTest{
 	
-	public WebDriver driver;
+	
+	@Test(priority = 1)
+	public void loginPageTitleTest(){
+		
+	Assert.assertTrue(loginpage.getLoginPageTitle());
+	}
+	
+	@Test(priority = 2)
+	public void loginPageHeaderTest() {
+		String header =loginpage.getPageHeaderText();
+		System.out.println("ip header is:" + header);
+		Assert.assertNotSame(header, Constant.PAGE_HEADER, Errors.HEADER_ERROR_MESSG);
+	}
+	
+	@Test(priority = 3)
+	public void forgetPwdLinkTest() {
+	Assert.assertTrue(loginpage.isForgetPwdLinkExists());
+	}
+	
+	@Test(priority = 4)
+	public void registerLinkTest() {
+		Assert.assertTrue(loginpage.isRegisterLinkExists());
+	}
 
-	
-	@Test(priority =1)
-	public void loginpagetitletest() {
-	String actTitle = loginpage.getLoginPageTitle();
-	System.out.println("page title:" + actTitle );
-	Assert.assertEquals(actTitle, Constant.Login_PAGE_TITLE);
-	}
-	
-	@Test(priority =2)
-	public void loginpageurltest() {
-	String acturl	= loginpage.getloginpageurl();
-	System.out.println("page url : " + acturl);
-	Assert.assertTrue(acturl.contains(Constant.Login_PAGE_URL_FRACTION));
-		
-	}
-	
-	@Test(priority =3)
-	public void forgetpwdlinktest() {
-		Assert.assertTrue(loginpage.isforgotpwdLinkExist());
-		
-	}
-	
-	@Test(priority =4)
-	public void registerlinktest() {
-		Assert.assertTrue(loginpage.isregisterlinkExist());
-		
-	}
-	
-	@Test(priority =5)
+	@Test(priority = 5)
 	public void loginTest() {
-	accountspage= loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-	Assert.assertTrue(accountspage.getAccountpageTitle(), Constant.Account_Page_Title);
+	loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
 }

@@ -9,7 +9,7 @@ import org.testng.asserts.SoftAssert;
 
 import com.qa.opencart.Factory.DriverFactory;
 import com.qa.opencart.pages.Accountspage;
-import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.Loginpage;
 import com.qa.opencart.pages.ProductInfopage;
 import com.qa.opencart.pages.RegistrationPage;
 import com.qa.opencart.pages.SearchResultsPage;
@@ -19,7 +19,7 @@ public class BaseTest {
 	DriverFactory df;
 	Properties prop;
 	WebDriver driver;
-	LoginPage loginpage;
+	Loginpage loginpage;
 	Accountspage accountspage;
 	SearchResultsPage searchResultPage;
 	ProductInfopage productInfoPage;
@@ -33,7 +33,7 @@ public class BaseTest {
 		df = new DriverFactory();
 		prop = df.init_prop();
 		driver = df.init_driver(prop);
-		loginpage= new LoginPage(driver);
+		loginpage= new Loginpage(driver);
 		softAssert = new SoftAssert();
 	}
 	

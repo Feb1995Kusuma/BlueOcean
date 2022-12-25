@@ -2,8 +2,7 @@ package com.qa.opencart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
+import com.qa.opencart.util.Constant;
 import com.qa.opencart.util.ElementUtil;
 
 public class RegistrationPage {
@@ -11,26 +10,30 @@ public class RegistrationPage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 	
-	private By firstName = By.id("input-firstname");
-	private By lastName = By.id("input-lastname");
-	private By email = By.id("input-email");
-	private By telephone = By.id("input-telephone");
-	private By password = By.id("input-password");
-	private By confirmpassword = By.id("input-confirm");
+	
+	
+	private By firstName = By.xpath("//input[@name='firstname']");
+	private By lastName = By.xpath("//input[@id ='input-lastname']");
+	private By email = By.xpath("//input[@id ='input-email']");
+	private By telephone = By.xpath("//input[@id ='input-telephone']");
+	private By password = By.xpath("//input[@id ='input-password']");
+	private By confirmpassword = By.xpath("//input[@id ='input-confirm']");
 
 	private By subscribeYes = By.xpath("(//label[@class='radio-inline'])[position()=1]/input");
 	private By subscribeNo = By.xpath("(//label[@class='radio-inline'])[position()=2]/input");
 
-	private By agreeCheckBox = By.name("agree");
-	private By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
+	private By agreeCheckBox = By.xpath("//input[@name='agree']");
+	private By continueButton = By.xpath("//input[@type='submit']");
 	private By sucessMessg = By.cssSelector("div#content h1");
-	private By logoutLink = By.linkText("Logout");
-	private By registerLink = By.linkText("Register");
+	private By logoutLink = By.xpath("//a[@class='list-group-item'][13]");
+	private By registerLink = By.xpath("//a[@class='list-group-item'][2]");
 
 	public RegistrationPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
 	}
+
+	 
 
 	public boolean accountRegistration(String firstName, String lastName, String email, String telephone, String password, String subscribe) throws InterruptedException {
         
@@ -50,16 +53,15 @@ public class RegistrationPage {
 		eleUtil.doClick(agreeCheckBox);
 		eleUtil.doClick(continueButton);
 
-	Thread.sleep(5000);
-	WebElement sucessMessg	= driver.findElement(By.cssSelector("div#content h1"));
-    System.out.println(sucessMessg);
-    eleUtil.doClick(logoutLink);
-	eleUtil.doClick(registerLink);
-     
-	return true;
-		
+	String mesg	=eleUtil.waitForElementPresence2(sucessMessg, 0).getText();
+		System.out.println(mesg);	
+		if(mesg.contains(Constant.REGISTER_SUCCESS_MESSG)) {
+			eleUtil.doClick(logoutLink);
+			eleUtil.doClick(registerLink);
+			return true;
+		}
 	
-	
+	return false;
 	
 }
 }

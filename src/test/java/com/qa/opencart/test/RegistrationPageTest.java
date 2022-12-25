@@ -13,18 +13,18 @@ import com.qa.opencart.util.ExcelUtil;
 
 public class RegistrationPageTest extends BaseTest
 {
-  public WebDriver driver;
+	public WebDriver driver;
 
-
-     
-	@BeforeClass
-	public void setupRegistration() {
-		registrationPage=loginpage.goToRegisterationpage();
-	}
+	
+    @BeforeClass
+    public void setupRegistration() {
+    registrationPage=loginpage.goToRegistrationPage();
+    }
 	
 	public String getRandomEmail() {
 		Random randomgenerator = new Random();
-		String email = "Februaryautomation"+randomgenerator.nextInt(1000)+"@gmail.com";
+		String email = "decemberautomation"+randomgenerator.nextInt(1000)+"@gmail.com";
+		System.out.println(email);
 		return email;
 	}
 	
@@ -35,9 +35,15 @@ public class RegistrationPageTest extends BaseTest
 	
 	@Test(dataProvider = "getRegisterData")
 	public void userRegistrationTest(String firstName, String lastName,
-			                         String telephone,String password, String subscribe) throws InterruptedException {
-	Assert.assertTrue(registrationPage.accountRegistration(firstName, lastName,  getRandomEmail(), 
-             telephone, password, subscribe));
+			                         String telephone, String password, 
+			                         String subscribe) {
+	try {
+		Assert.assertTrue(registrationPage.accountRegistration(firstName, lastName,  getRandomEmail(), 
+		         telephone, password, subscribe));
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 	
 	
