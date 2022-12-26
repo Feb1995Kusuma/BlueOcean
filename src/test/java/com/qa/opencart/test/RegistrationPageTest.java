@@ -18,7 +18,7 @@ public class RegistrationPageTest extends BaseTest
 	
     @BeforeClass
     public void setupRegistration() {
-    registrationPage=loginPage.goToRegistrationPage();
+    registrationPage=loginpage.goToRegistrationPage();
     }
 	
 	public String getRandomEmail() {

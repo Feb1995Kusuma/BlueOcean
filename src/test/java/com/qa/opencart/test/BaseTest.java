@@ -19,7 +19,7 @@ public class BaseTest {
 	DriverFactory df;
 	Properties prop;
 	WebDriver driver;
-	Loginppage loginPage;
+	Loginppage loginpage;
 	Accountspage accountspage;
 	SearchResultsPage searchResultPage;
 	ProductInfopage productInfoPage;
@@ -33,7 +33,7 @@ public class BaseTest {
 		df = new DriverFactory();
 		prop = df.init_prop();
 		driver = df.init_driver(prop);
-		loginPage= new Loginppage(driver);
+		loginpage= new Loginppage(driver);
 		softAssert = new SoftAssert();
 	}
 	
