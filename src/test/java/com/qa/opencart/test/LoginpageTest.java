@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.util.Constant;
 
-public class LoginPageTest extends BaseTest {
+public class LoginPagetest extends BaseTest {
 	
-	
+
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
     Assert.assertTrue(loginPage.getLoginPageTitle());	

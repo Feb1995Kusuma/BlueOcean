@@ -9,9 +9,9 @@
     
  
   
-  <test name="Opencart LoginPageTest">
+  <test name="Opencart LoginPagetest">
        <classes>  
-     <class name="com.qa.opencart.test.LoginPageTest">
+     <class name="com.qa.opencart.test.LoginPagetest">
         </class> 
        </classes>    
      </test>
