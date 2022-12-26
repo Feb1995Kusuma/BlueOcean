@@ -3,15 +3,13 @@
 <suite name="Open cart test Suite" parallel="tests" thread-count="3">
   
   <listeners> 
-  
-  <listener class-name="com.qa.opencart.listeners.ListenersTestNG"></listener> 
+  <listener class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
   <listener class-name="com.qa.opencart.listeners.ExtentReportListener"></listener> 
-  
   </listeners>
     
  
   
-  <test name="Opencart LoginPage Test">
+  <test name="Opencart LoginPageTest">
        <classes>  
      <class name="com.qa.opencart.test.LoginPageTest">
         </class> 

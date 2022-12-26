@@ -1,6 +1,5 @@
 package com.qa.opencart.listeners;
 
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -18,11 +17,8 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qa.opencart.Factory.DriverFactory;
 
-
-public class ExtentReportListener extends DriverFactory implements ITestListener
-
+public class ExtentReportListener extends DriverFactory implements ITestListener 
 {
-	
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
@@ -100,15 +96,15 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
+	private String getScreenshot() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
-	}
-
-	private String getScreenshot() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {

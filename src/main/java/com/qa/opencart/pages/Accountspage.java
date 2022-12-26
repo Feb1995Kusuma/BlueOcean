@@ -39,7 +39,7 @@ public class Accountspage {
 	}
 	
 	public boolean isLogoutLinkExist() {
-		return eleUtil.doIsDisplayed(logoutlink);
+		return eleUtil.doisDisplayed(logoutlink);
 	}
 	
 	public void logout() {
@@ -61,7 +61,7 @@ public class Accountspage {
 	
 	
 	public boolean isSearchExist() {
-		return ((ElementUtil) driver).doIsDisplayed(searchfield);
+		return ((ElementUtil) driver).doisDisplayed(searchfield);
 	}
 	
 	public SearchResultsPage doSearch(String productName) {

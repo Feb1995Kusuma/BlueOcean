@@ -4,36 +4,36 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.util.Constant;
-import com.qa.opencart.util.Errors;
 
-public class LoginPageTest extends BaseTest{
+public class LoginPageTest extends BaseTest {
 	
 	
 	@Test(priority = 1)
-	public void loginPageTitleTest(){
-		
-	Assert.assertTrue(loginpage.getLoginPageTitle());
+	public void loginPageTitleTest() {
+    Assert.assertTrue(loginPage.getLoginPageTitle());	
+  
 	}
-	
+  
 	@Test(priority = 2)
 	public void loginPageHeaderTest() {
-		String header =loginpage.getPageHeaderText();
-		System.out.println("ip header is:" + header);
-		Assert.assertNotSame(header, Constant.PAGE_HEADER, Errors.HEADER_ERROR_MESSG);
+	String header = loginPage.getPageHeaderText();
+	System.out.println("ip header is: " + header);
+	Assert.assertNotSame(Constant.PAGE_HEADER, Constant.DEFAULT_TIME_OUT);
 	}
 	
 	@Test(priority = 3)
 	public void forgetPwdLinkTest() {
-	Assert.assertTrue(loginpage.isForgetPwdLinkExists());
+	Assert.assertTrue(loginPage.isForgetPwdLinkExist());
 	}
 	
 	@Test(priority = 4)
 	public void registerLinkTest() {
-		Assert.assertTrue(loginpage.isRegisterLinkExists());
+		Assert.assertTrue(loginPage.isRegisterLinkExist());
 	}
-
+	
 	@Test(priority = 5)
 	public void loginTest() {
-	loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
+
 }

@@ -80,13 +80,11 @@ public class ElementUtil {
 
 	public WebElement getElement(By locator) {
 		WebElement element = driver.findElement(locator);
-		if(Boolean.parseBoolean(DriverFactory.highlight)) {
+		if(Boolean.parseBoolean(DriverFactory.highlight.trim())) {
 			jsUtil.flash(element);
 		}
-		
 		return element;
 	}
-
 	public WebElement getElement(String locatorType, String locatorValue) {
 		return driver.findElement(getBy(locatorType, locatorValue));
 	}
@@ -95,13 +93,16 @@ public class ElementUtil {
 		return driver.findElements(locator);
 	}
 	
-	public void doClear(By locator) {
-		getElement(locator).clear();
-	}
+	
 
 	public void doSendKeys(By locator, String firstName) {
-		doClear(locator);
+		doClear1(locator);
 		getElement(locator).sendKeys(firstName);
+	}
+
+	private void doClear1(By locator) {
+		getElement(locator).clear();
+		
 	}
 
 	public void doClick(By locator) {
@@ -116,7 +117,7 @@ public class ElementUtil {
 		return getElement(locator).getAttribute(attrName);
 	}
 
-	public boolean doIsDisplayed(By locator) {
+	public boolean doisDisplayed(By locator) {
 		return getElement(locator).isDisplayed();
 	}
 
@@ -291,9 +292,9 @@ public class ElementUtil {
 		return null;
 	}
 	
-	public String waitForUrlContains(String urlFraction, Duration timeOut) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
-		if(wait.until(ExpectedConditions.urlContains(urlFraction))) {
+	public String waitForUrlContains(String loginPageurlFraction, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver,i);
+		if(wait.until(ExpectedConditions.urlContains(loginPageurlFraction))) {
 			return driver.getCurrentUrl();
 		}
 		return null;
@@ -396,7 +397,7 @@ public class ElementUtil {
 	}
 
 	public boolean doGetTitle(String loginPageTitle, int defaultTimeOut) {
-		return true;
+		return true ;
 	}
 
 	
@@ -430,7 +431,7 @@ public class ElementUtil {
 	}
 
 	public void doSendKeys(By locator,By firstName, String firstName1) {
-		doClear(locator);
+		doClear1(locator);
 		getElement(locator).sendKeys(firstName1);
 	}
 

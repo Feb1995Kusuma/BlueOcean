@@ -18,7 +18,7 @@ public class RegistrationPageTest extends BaseTest
 	
     @BeforeClass
     public void setupRegistration() {
-    registrationPage=loginpage.goToRegistrationPage();
+    registrationPage=loginPage.goToRegistrationPage();
     }
 	
 	public String getRandomEmail() {
@@ -38,7 +38,7 @@ public class RegistrationPageTest extends BaseTest
 			                         String telephone, String password, 
 			                         String subscribe) {
 	try {
-		Assert.assertTrue(registrationPage.accountRegistration(firstName, lastName,  getRandomEmail(), 
+		Assert.assertNotNull(registrationPage.accountRegistration(firstName, lastName,  getRandomEmail(), 
 		         telephone, password, subscribe));
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block

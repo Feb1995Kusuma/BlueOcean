@@ -8,7 +8,7 @@
           <include name="setupRegistration"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="userRegistrationTest" invocation-numbers="0 1 2 3"/>
+          <include name="userRegistrationTest" invocation-numbers="3"/>
         </methods>
       </class> <!-- com.qa.opencart.test.RegistrationPageTest -->
     </classes>
