@@ -17,7 +17,7 @@ public class ProductInfoPageTest extends BaseTest
 
 	@BeforeClass
 	public void productInfoSetup() {
-		accountspage = loginpageMain.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		accountspage = loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test(priority =1)

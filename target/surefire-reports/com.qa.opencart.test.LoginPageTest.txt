@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.qa.opencart.test.LoginPageTest
+Test set: com.qa.opencart.test.LoginpageTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.043 s - in com.qa.opencart.test.LoginPageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.075 s - in com.qa.opencart.test.LoginpageTest

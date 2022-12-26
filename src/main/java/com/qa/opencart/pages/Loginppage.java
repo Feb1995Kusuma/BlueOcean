@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.util.Constant;
 import com.qa.opencart.util.ElementUtil;
 
-public class  LoginppageMain {
+public class  Loginppage {
 	
 	//1. declare own private driver
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 	
 	//2. to initialize the driver with help constructor
-	public LoginppageMain(WebDriver driver) {
+	public Loginppage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
 		

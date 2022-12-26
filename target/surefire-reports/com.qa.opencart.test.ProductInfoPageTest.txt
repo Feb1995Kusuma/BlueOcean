@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.qa.opencart.test.ProductInfoPageTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.92 s - in com.qa.opencart.test.ProductInfoPageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.081 s - in com.qa.opencart.test.ProductInfoPageTest
