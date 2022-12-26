@@ -29,7 +29,7 @@ pipeline
         stage('Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/Feb1995Kusuma/BestLesson22'
+                    git 'https://github.com/Feb1995Kusuma/pipeline2022'
                     sh "mvn clean install"
                 }
             }
